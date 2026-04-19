@@ -1,0 +1,10 @@
+.red{
+      color: rgb(49, 158, 73);
+}/*class is targeted in css by putting (.) */
+
+.bg-yellow{
+    background-color: yellow;
+}
+#firstdiv{
+    background-color: red;
+}/* (#) is used for id
