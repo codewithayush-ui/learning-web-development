@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Forms</title>
+</head>
+<body>
+    <h1>Form to apply for DSA course</h1>
+    <form action="post"><!---->
+        <div><!--divides the previous thing from this and gives the next thing in another line-->
+        <label for="username">Enter your username</label><!--to give a lable to ehat has to be filled here , in for we put the same thing as in id to link it , if lable is written over the input it wouls reflect over and if under then it would reflect under the input syntax-->
+        <input type="text" id="username" name="username" placeholder="enter your username" autofocus required><!--input is widely used to help us know aht to do here and we can selet type if text then it gives space to write the username etc. , id is used to give the text a unique identity , and place holder to reflect what we have to write here , autofocus is to get focus on the place we are typing , and required so that it is important to select those-->
+    </div>
+    <div> 
+    <input type="radio" id="male" name="gender" value="male"><!--radio is circle type to select the things like here gender , name is important as to select one ...if name will be wrong in both the radio it wont select one , it will select both the options and value to select the option when we click on the male thong-->
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female"><!--the name should be same for both the same type (like here radio) to selct one at a time -->
+        <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" name="subscribe" id="subscribe" value="yes"><!--checkbox type is to give a checkbox to select and value is given yes so that on clicking it selects it -->
+            <label for="subscribe">subscribe to me </label>
+        </div>
+        <div>
+            <label for="comment">Enter your comment here</label>
+            <textarea name="comment" rows="4" cols="50" id="comment"></textarea><!-- to give area to the comment box for writing with id and spaces of row and column to give-->
+           
+        </div>
+        <div>
+            <select name="fruits"><!-- to create a select type -->
+                <option value="apple">Apple</option><!--to give what option to selct between-->
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>
