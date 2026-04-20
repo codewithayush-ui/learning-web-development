@@ -1,0 +1,31 @@
+<!--Quick quiz:
+     without using br tag , write a vertically alingned form asking for name ,
+     city and pincode of user-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code for quiz</title>
+</head>
+<body>
+    <h1>FORM</h1>
+    <form action="" method="post">
+        <div>
+            <label for="username"> Enter your username</label>
+           <div> <input type="text" id="username" name="username" placeholder="enter your username" required></div>
+        </div>
+        <div>
+            <label for="city">Enter your city</label>
+            <div>
+                <input type="text" id="city" name="city" placeholder="name your city ">
+            </div>
+        </div>
+        <div>
+            <label for="pincode">State your pincode</label>
+            <div><input type="text" id="pincode" placeholder="state your pincode" maxlength="6" name="pincode" inputmode="numeric"></div>
+        </div>
+        <input type="submit" value="submit"><!-- added with taking the help of chat gpt-->
+    </form>
+</body>
+</html>
