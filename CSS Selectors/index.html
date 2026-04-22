@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* element selector  */
+        div{
+            /* background-color: red; */
+        }
+
+        /* class selector  */
+        .red{ /*this is a class selector to only style a particular tag if there are more similiar tags like that */
+            background-color: red;
+        }
+
+        /* Id selector */
+        #green{ /*this is a id selector to style a particular tag by giving it a ID */
+            background-color: green;
+        }
+
+        /* Child selector */
+        div > p { /* this selector means that if there is a paragraph directly inside the div it will treat it as a child and do the styling
+            and if there will be another thag inside which there is paragraph is written then this tag will not work */
+            color: blue;
+            background-color: violet;
+        }
+
+        /* Decendent selector  */
+        div p{ /* this selector is a bigger version of chil tag it will style the paragraph , it does not matters that if it is dirsectly inside the tag or not */
+            color: blue;
+            background-color: violet;
+        }
+
+        /* Universal selector  */
+        *{ /*this selector is used to give any style to all the tags , universally */
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo Selector  */
+        a:visited { /* this type of psuedo selector is used to refer to a link so that after visiting it changes in colour */
+         color: yellow;
+        }
+
+        a:link{ /* this type of pseudo selector is used to colour the a attribute when it is not visited */
+            color: green;
+        }
+        a:active{ /*this type is used to the get a diffrent background when we click on the link of the a tag */
+             background-color: red;
+        }
+        a:hover{ /*this type is used when we move the cursor on the link it chsnges its colour or background-color: as told */
+            background-color: yellow;
+        }
+        p:first-child{ /* this tag is used as we need a diffrent colour or background colour for the first child of the paragraph tag */
+            background-color: aqua;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+
+    </main>
+    <div class="one">
+    i am one 
+    </div>
+    <div class="red">
+        I am a div 
+        <article>
+        <p>I am a para selector</p>
+        </article>
+    </div>
+    <div id="green">
+        another div 
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook.com">Go to Facebook</a>
+</body>
+</html>
