@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Boxmodel</title>
+    <style>
+        *{ /* to reset some things done by the browser itself or customize them , here we customize the spaces between things*/
+            margin: 0;
+            padding: 0;
+        }
+.box{
+    background-color: aqua;
+}
+            .box1{
+                color: red;
+                padding: 10px;
+                /* background colour padding ke time include hoti hai , but margin ke time include nhi hoti  */
+                margin: 25px;
+                border: 2px solid blue;
+                height: 200px;
+                box-sizing: border-box; /*iska mtlb hai ki maine jo height batayi hai wo border aur padding o include krke hai, margin nhi */
+
+            }
+            .box2{
+                color: yellow;
+                 padding: 10px;
+                  margin: 25px;
+                border: 2px solid black;
+                height: 200px;
+                box-sizing: border-box;
+
+            }
+            /* margin collapse - it means that when two baxmodel are used together or made , once the maximum margin is calculated once between the two boxes */ 
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a BOX</div>
+    <!-- we can add more than one class to a attribute by just giving spaces between them -->
+    <div class="box box2">I am another box</div>
+</body>
+</html>
