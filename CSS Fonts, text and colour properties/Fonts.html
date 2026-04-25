@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts, text and color propeties</title>
+    <!-- fonts can also be included by using the link and pasting it directy inside the head tag  -->
+    <style>
+        h1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic; /* font style iis used to change the style of the font like italic or oblique*/
+            font-weight: bold; /* to change weight or making the text bold */
+            text-decoration: underline; /* to undeerline or decorate the texts */
+            font-size: 20px; /* to change the font size and all */
+            line-height: 1.5; /*adds spacing between the lines */
+            letter-spacing: 2px; /*imcreases space between letters */
+
+        }
+        /* we can import diffrent fonts from google then use them in our progaramming by copy pasting import command then , adding the syntax give in google fonts */
+        h2{
+            text-transform: capitalize; /*it capitlize the initals of the words */
+            text-decoration: underline; /* it decorates by underlining the text */ 
+            text-decoration-color:aqua ; /*it is the attribute to adding to the text decoration */
+            text-decoration-style: dotted; /*it is the tag to text decoration style */ 
+            text-align: center; /*allings the text of the tag in the centre */
+            
+        
+        }
+        .lorem{
+            border: 2px solid red; /* to give border to the selected tag  */
+            width: 145px; /* to give the width to the tag */
+            /* text-overflow: ellipsis; to tell the software to which shape to acquire if there is text overflow in the given width */
+            /* overflow: hidden; what to show when there is a overflow , hideen makes the words in the border in ... form that exceed the given width */
+            word-break: break-all; /* breaks all the words not fitting the line */
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Fonts</h1>
+        <h2>about fonts</h2>
+        <p class="lorem">This is about fonts Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem porro, ipsam reprehenderit omnis odit at dolor natus perspiciatis. Quaerat cum tempore natus vero nulla illum. Debitis fugiat qui tempora assumenda cumque, saepe rerum iure unde illum laudantium maiores deserunt veritatis ducimus tenetur in! Pariatur, quibusdam.</p> 
+    </div>
+</body>
+</html>
