@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity and Cascade</title>
+    <style>
+        /* the specificity of the the selctors can be calculated using giving values to them but for complex slectors we add the values of the diffrent selectors used  */
+        h1{
+            color: aqua;
+        }
+        .yellow{
+            color: yellow;
+            color: blue !important;
+        }
+        .cred{
+            color: red;
+        }
+        .cpurple{
+            color: purple;
+        }
+
+
+        /* this gives the color purple to the task , due to the cascading algorithm  */
+        [data-x=a]{ /*this is the attribute tag */
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="color: red;" class="yellow cred cpurple" data-x="a">
+           CSS Specificity
+        </h1>
+        <p>
+            The cascade algorithm decides which one to give preference 
+            <ol>
+                <li>position or order of appearance</li>
+                <!-- If there is the comeption to select between the same class or same selector , it would select the class or selector that is put in at the last -->
+                 <li>Specificity</li>
+                 <!-- it tells about which selctor is the most specific  -->
+                  <p>Order of apecificity is :
+                    <div>Inline style > ID selector > Class or Attribute selector > Element Selector > Universal Selector</div>
+                  </p>
+                  <li>Origin</li>
+                  <!-- the order in which CSS appears and where it comes from , wether that is a browser style, CSS from a browser Extension, or your authored CSS -->
+                   <li>Importanceaa</li>
+            </ol>
+        </p>
+    </div>
+</body>
+</html>
