@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 12px;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 223px; */
+            width: 80vw;  /* used in place of pixel as pixel might be diffrent for diffrent type of devices , 100 vw takes exactly thr required space according to the monitor */
+            height: 10vh;
+            margin: auto; /* margin auto is to make the whole thing centered , this would only work for the block elements not the inline elements */
+            background-color: aquamarine;
+        }
+        .container{
+             box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh; /*gives a minimum height to the box even if there is content or not , there is no limit for the maximum */
+            margin: 23px auto; /*if we want to give space between the top and bottom we do so by giving space between them */
+            font-size: 16px;
+            background-color: aquamarine;
+
+        }
+
+        .container > div{
+            border: 2px solid red;
+            font-size: 2rem ;
+            /* the font size is the property that inherits the valuw from the container only , now the work of 1 em is to multipy the value of the font size by the given em value , if i write 2 em the value of font size will become 36 pixel  */
+            /* now rem means that to give multipy the value of the font size by number of times to the root value given  */
+            width: 50%;
+            /* this means that the the box will get the 50 % width of the parent text  */
+
+        }
+        .container > div > div{
+            border: 2px solid blue;
+        }
+        .mycont{
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: 23px auto;
+            color: black;
+            font-size: 22px;
+            width: 100vmin; /*vmin rrefers to height or the width of the diffrent values , for laptop vmin is height , whereas for mobile vmin in width as width is minimum or smaller in mobile phone */ 
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum placeat fuga similique deleniti distinctio aspernatur modi dolores mollitia doloremque enim deserunt rerum atque, harum dignissimos aperiam libero eveniet soluta. Iusto, eaque voluptatum necessitatibus cum nulla, vero eligendi dicta consequatur possimus voluptatem ut, consequuntur accusamus! Eveniet aliquid aspernatur consequuntur et distinctio illum veniam suscipit, corrupti porro praesentium.
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, nesciunt ab. Nam voluptates mollitia quod ullam molestias quae optio autem commodi repellat ipsum?</div>
+        </div>
+        
+    </div>
+    <div class="mycont">
+        I am another container
+    </div>
+</body>
+</html>
