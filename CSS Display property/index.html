@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Display Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+.Box{
+    border: 2px solid blue;
+    display: inline; /*to make a block elemnent into a inline element, as block elemnt contains full line area , but inline takes only required */ 
+    padding: 24px;
+    margin: 34px; /*to add padding or margin froma ll the sides we need to use displat: inline -block; or else it would not be added from all the top */  
+    /*the display inline property prevents the width attribute to work , to make it work we use the display inline block attribute*/
+}
+.Box1{
+    /* display: none; this make the display to remove and the other things to sdjust accordingly by shifting it  */
+    visibility: hidden; /*this makes the the box still take its place but make it hidden at itd position */
+}
+    </style>
 </head>
 <body>
-    
+    <div class="Box Box1">
+        i am a box
+    </div>
+    <div class="Box">also a nice box</div>
+
+    <span>I am a good</span>
+    <span>boy</span>
 </body>
 </html>
