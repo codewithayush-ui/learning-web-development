@@ -1,0 +1,33 @@
+<!DOCTYPE html>     
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        .clases{
+            border: 2px solid black;
+            display: flow-root; /*this will solve the image overflow and keep it defined in the borders and is done in parent class to make it applicable to all*/
+        }
+        img{
+            float: left; /*this is used to make the image float left and allow the paragraph to its right */}
+       
+        .class{
+            border: 2px solid red;
+        }
+        .class:nth-child(2){
+            background-color: aqua;
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="clases">
+        <img src="https://img.etimg.com/thumb/width-420,height-315,imgsize-33278,resizemode-75,msid-123561467/industry/transportation/railways/railways-run-special-jammu-delhi-train-for-stranded-passengers/indian-railways-jammu-trains-cancelled.jpg" alt="train">
+        <p class="class">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis ea, vero dicta id fuga sed dolore laboriosam tempora sapiente magni. Ea laudantium quaerat consequatur amet vitae, repellendus voluptate provident nesciunt. Corporis quasi minima, aperiam, odit nostrum numquam quisquam sint velit accusantium neque quas sed a expedita soluta, ratione iste ad explicabo illum in quia quibusdam nulla? Architecto cum minima accusamus asperiores distinctio repellendus voluptas magnam numquam ea deserunt consequatur autem, veritatis possimus odio eveniet, rem libero, id dolor corrupti. Natus animi adipisci incidunt nihil saepe, tempore atque tenetur porro hic assumenda sapiente fugit praesentium id officiis distinctio quos, architecto dolorem aliquid molestiae aperiam et labore fugiat! Placeat debitis optio ipsa, illum facilis in nihil nam corrupti dolor voluptas accusantium aperiam consequuntur a vero.</p>
+        <div class="class">Card 1</div>
+        <div class="class">Card 2</div>
+        <div class="class">Card 3</div>
+    </div>
+</body>
+</html>
