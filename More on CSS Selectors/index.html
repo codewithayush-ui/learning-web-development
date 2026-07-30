@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box::first-line{
+            color: yellow; 
+            /* this will make the first line of the class box as yellow  */
+    
+        /* .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+        this will make apply the attributes to all things that are associated with the class boxes */
+        /* p,a,.box[data-color="primary"]{
+            padding-top: 45px;
+        } */
+         /* .box:nth-last-child(even){
+            background-color: blue;
+         }
+         .box:nth-last-child(3){
+            background-color: red;
+         } */
+         .boxes::before{
+            content: "i am learning";
+            background-color: red;
+         }
+         .boxes::after{
+            content: "this is after pseudo selector";
+         }
+         ::selection{
+            background-color: lightblue;
+            color: red;
+         }
+         .box::first-letter{
+            color: peru;
+            font-size: 45px;
+         }
+         input::placeholder{color: rgb(152, 152, 163);}
+
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary"class="box">Hey i am a box</div>
+        <div class="box">Hey i am a box</div>
+        <div class="box">Hey i am a box</div>
+        <input type="text" placeholder="Type your name">
+    </div>
+</body>
+</html>
