@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise 5 - Design this Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .first{
+            background-color: red;
+            padding: 40px;
+            position: sticky;
+            top: 0px;
+        }
+        body{
+            background-color: blue;
+        }
+        .main{
+            background-color: rgb(155, 18, 223);
+            margin: 50px;
+            padding: 50px;
+            display: flex;
+            justify-content: space-around;
+
+        }
+        .one{
+            background-color: green;
+            height:300px;
+            width: 300px;
+        }
+        .two{
+            background-color: yellow;
+            height: 300px;
+            width: 300px;
+
+        }
+        .box{
+            background-color: violet;
+            padding: 40px;
+            position: relative;
+            top: 0px;
+            text-align: center;
+            border-radius: 20px;
+        }
+        .circle{
+            background-color: orange;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+           position: fixed;
+            right: 20px;
+            bottom: 20px;
+        }
+        .footer{
+            background-color: black;
+            height: 70px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="first"></div>
+    <div class="main">
+        <div class="one"></div>
+        <div class="two"></div>
+    </div>
+       
+        <div class="box">WELCOME TO THE WEBSITE</div>
+        
+        <div class="circle"></div>
+        <div class="footer"></div>
+</body>
+
+</html>
